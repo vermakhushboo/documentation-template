@@ -1,9 +1,9 @@
 <template>
   <button
-    class="px-4 py-2 rounded-md transition-all shadow-sm hover:bg-opacity-80 font-medium"
+    class="flex items-center gap-2 px-4 py-2 rounded-md transition-all shadow-sm hover:bg-opacity-80 font-medium flex-nowrap"
     :class="classes"
   >
-    <slot></slot>
+    <slot />
   </button>
 </template>
 
@@ -17,10 +17,11 @@ const props = defineProps<{
 }>();
 
 const classes = {
-  "text-white bg-blue-500 hover:bg-opacity-80": props.primary,
-  "text-blue-600 border-blue-500 border": props.secondary,
-  "text-blue-500 hover:bg-opacity-80 shadow-md": props.text,
+  "text-white bg-black hover:bg-opacity-80": props.primary,
+  "text-black-600 border-black-500 border": props.secondary,
+  "text-black-500 hover:bg-opacity-80 shadow-md": props.text,
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>

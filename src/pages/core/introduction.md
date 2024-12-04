@@ -2,21 +2,34 @@
 title: Introduction
 description: Docs intro
 layout: ../../layouts/MainLayout.astro
+setup: |
+  import MainButton from '../../components/MainButton.vue'
+  import { Github } from 'lucide-vue-next'
+  import { Link } from 'lucide-vue-next'
 ---
 
-# Astro Design System Theme
+# Documentation
 
-Astro Design System is the easiest way to start your our design system. Since Astro is compatible with many frameworks, you can import your components and document them right in the markdown files.
+This is Acme Inc’s open-source design system for building consistent and reusable user interfaces. It is designed to prioritize collaboration, dev experience, and accessibility.
+<div style="margin-top: 20px; display: flex; gap: 10px;">
+    <MainButton primary>Get started</MainButton>
+    <MainButton secondary>
+         <Github color="#56565C" size={15} /> GitHub
+    </MainButton>
+</div>
 
-## Getting started
+<div class="flex items-center flex-row" style="gap: 10px;">
+  <h1 class="mr-2">Getting Started</h1>
+  <Link color="#56565C" size={15}/>
+</div>
 
-### Adding new sections
+<div class="flex items-center" style="gap: 10px;">
+  <h3 class="mr-2">CDN</h1>
+  <Link color="#56565C" size={15}/>
+</div>
 
-Although it's not required, you can create folders for new sections.
-
-To show the section on the left side navigation, add it to the navigation config file at `src/config.ts`.
-
-Example:
+Include the CSS library in your project.
+Copy the following code into the `<head>` section of your HTML file.
 
 ```js
 export const SIDEBAR = [
@@ -31,7 +44,10 @@ export const SIDEBAR = [
 ];
 ```
 
-### Adding new pages
+<div class="flex items-center" style="gap: 10px;">
+  <h3 class="mr-2">NPM</h1>
+  <Link color="#56565C" size={15}/>
+</div>
 
 To add new pages just create an .astro or markdown file in `src/pages/[section]/my-page.md`. Remember to add it to the navigation config in `src/config.ts` so it shows up in the left side navigation.
 
@@ -64,5 +80,3 @@ There's a class called `.component-preview` that you can use to wrap your compon
 </div>
 
 ### Have fun!
-
-Astro Design System template was made by **[@jordienr](https://twitter.com/jordienr)** for personal and commercial use.

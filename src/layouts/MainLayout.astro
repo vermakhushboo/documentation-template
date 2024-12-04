@@ -20,7 +20,7 @@ const currentPage = new URL(Astro.request.url).pathname;
 		<title>{content.title ? `${content.title} 🚀 ${CONFIG.SITE.title}` : CONFIG.SITE.title}</title>
 	</head>
 
-	<body class="bg-slate-100">
+	<body class="bg-slate-100 bg-opacity-30">
 		<div class="sticky top-0 z-10 w-full">
 			<Header currentPage={currentPage} />
 		</div>

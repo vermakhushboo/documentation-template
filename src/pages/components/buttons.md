@@ -5,57 +5,31 @@ setup: |
   import MainButton from '../../components/MainButton.vue'
 ---
 
-## All buttons
+## Button
 
-This page is an example on how to document your button components, most of the copy was written by AI so don't take it very seriously.
-
-Find the code for this page in the `src/pages/components/buttons.md` file.
+The Button component is a versatile UI element used for initiating actions or submitting data in your application. It is one of the most common interactive elements and is designed to be highly customizable to meet different use cases.
 
 <div class="component-preview">
-    <MainButton primary>Primary</MainButton>
-    <MainButton secondary>Secondary</MainButton>
-    <MainButton text>Text</MainButton>
+    <MainButton primary>Button</MainButton>
 </div>
 
-```js
-  <MainButton primary>Primary</MainButton>
-  <MainButton secondary>Secondary</MainButton>
-  <MainButton text>Text</MainButton>
-```
+## Overview
 
-## Primary button
+A button typically triggers an event when clicked, such as form submissions, navigation, or interactions with other elements in the interface. Our Button component follows the principles of clarity, accessibility, and consistency.
 
-We use the primary button for main actions like saving a form or creating a new item.
+## Usage
 
 <div class="component-preview">
-    <MainButton primary>Primary button</MainButton>
+    <MainButton primary>Button</MainButton>
+    <MainButton secondary>Button</MainButton>
+    <MainButton text>Button</MainButton>
 </div>
 
-```js
-<MainButton primary>Primary button</MainButton>
-```
-
-## Secondary button
-
-Secondary buttons accompany primary buttons to provide additional actions.
-For example, cancel buttons are secondary buttons.
-
-<div class="component-preview">
-    <MainButton secondary>Secondary button</MainButton>
-</div>
+The Button component should be used to perform primary or secondary actions within your UI. It is important to choose the correct button style depending on the importance of the action.
 
 ```js
-<MainButton secondary>Secondary button</MainButton>
+<MainButton primary>Button</MainButton>
+<MainButton secondary>Button</MainButton>
+<MainButton text>Button</MainButton>
 ```
 
-## Text button
-
-Text buttons are used for actions that do not require a primary or secondary button.
-
-<div class="component-preview">
-    <MainButton text>Text button</MainButton>
-</div>
-
-```js
-<MainButton text>Text button</MainButton>
-```
